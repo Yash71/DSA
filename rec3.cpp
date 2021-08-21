@@ -20,6 +20,7 @@ int main(){
   print_12n(n); //prints 1 to n
   return 0;
 }
+//----------------tail recursion--------------------
 
 //printing n to 1 is much faster than printing 1 to n because print_n21 uses tail recursion.
 
@@ -47,3 +48,4 @@ int fact(int n, int x){
   }
   return fact(n-1,n*x);
 }
+//----------------tail recursion--------------------
