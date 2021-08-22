@@ -49,3 +49,11 @@ int fact(int n, int x){
   return fact(n-1,n*x);
 }
 //----------------tail recursion--------------------
+
+//fibonacci series using recursion
+int fib(int n){
+  if(n<=1){
+    return 0;
+  }
+  return fib(n-1)+fib(n-2);
+}
