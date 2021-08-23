@@ -59,5 +59,16 @@
         if(n==0) return (sum==0)? 1:0;
         return countsub(arr, n-1,sum)+countsub(arr,n-1,sum-arr[n-1]);
       } // Time complexity --> θ(n^2)
+  
+  // Print all the permutations
+    void permutate(string s,int i){
+      if(i==s.length()-1) cout<<s<<", ";
+      for(int j=i;j<s.length();j++){
+        swap(s[i],s[j]);
+        permutate(s,i+1);
+        swap(s[j],s[j]);
+      }
+    }
+  
      
     
