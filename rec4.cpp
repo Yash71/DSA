@@ -42,3 +42,16 @@
       cout<<"Move"<<n<<"from"<<A<<"to"<<B<<endl;
       TOH(n-1,B,A,C);
     }
+  //Josephus Problem
+    //there are n people standing n people standing in a circle. Kth person has to be killed everytime in clockwise direction. The last remaining person is the survivor
+     int Josephus(int N, int K){
+       if(N==1){
+         return 0;
+       }
+       return(Josephus(N-1,K)+K)%N;
+     } //Time Complexity --> θ(n)
+
+    //If the position doesn't begin from 0, simply call the function in the main function and add 1 to it
+  
+  
+    
