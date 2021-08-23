@@ -24,13 +24,13 @@
     //itterative solution is much better as it occupies less auxillary space than the recursive solution
   
   //General Subsets
-     void subset(string st, string cur, int i=0){
+     void subset(string st, string cur, int i){
        if(i==st.length()){
          cout<<cur;
          return;
        }
-       subset(st,cur,i++);
-       subset(st,cur+st[i],i++);
+       subset(st,cur,i+1);
+       subset(st,cur+st[i],i+1)
      }
   //Tower of hanoi
     void TOH(int n, char A, char B, char C){
@@ -53,5 +53,11 @@
 
     //If the position doesn't begin from 0, simply call the function in the main function and add 1 to it
   
-  
+  //Subset sum problem
+    //Naive solution
+      int countsub(int arr[], int n, int sum){
+        if(n==0) return (sum==0)? 1:0;
+        return countsub(arr, n-1,sum)+countsub(arr,n-1,sum-arr[n-1]);
+      } // Time complexity --> θ(n^2)
+     
     
