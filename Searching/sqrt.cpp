@@ -3,7 +3,7 @@
   using namespace std;
 
   int sqroot(int x){
-    int start=0, end=x-1, ans=-1;
+    int start=1, end=x, ans=-1;
     while(start<=end){
       int mid=(start+end)/2;
       int ms=mid*mid;
