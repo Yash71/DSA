@@ -10,7 +10,7 @@
       for(int i=0;i<(m+n);i++){
         if(i==0 || arr[i]!=arr[i-1]) cout<<crr[i]<<" ";
       }
-    }
+    } //Time Complexity --> O((m+n)*log(m+n)) Auxillary space: Θ(m+n)
 
   //Efficient Code
     void uni(int arr[],int brr[],int m,int n){
@@ -27,4 +27,4 @@
         if(i>0 && arr[i]!=arr[i-1]) {cout<<arr[i]; i++;}
       while(j<n)
         if(j>0 && brr[j]!=brr[j-1]) {cout<<brr[j]; j++;}
-    }
+    } //Time complexity --> Θ(m+n) Auxillary Space--> Θ(1)
