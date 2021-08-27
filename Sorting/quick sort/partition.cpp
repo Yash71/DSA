@@ -40,8 +40,8 @@ void swap(int *x, int *y){
      int p=arr[l];
      int i=l-1, j=h+1;
      while(true){
-       do i++; while (arr[i]<p);
-       do j--; while (arr[j]>p);
+       do {i++;} while (arr[i]<p);
+       do {j--;} while (arr[j]>p);
        if(i>=j) return j;
        swap(&arr[i],&arr[j]);
      }
