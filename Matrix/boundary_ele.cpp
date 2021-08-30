@@ -6,11 +6,13 @@
 //O/P 1 2 3 4 8 13 12 11 10 5 1
 
 void print(int arr[R][C]){
-  if(R==1){
+  //If the matrix consists of only 1 Row
+  if(R==1){ 
     for(int i=0;i<C;i++){
       cout<<arr[0][i]<<" ";
     }
   }
+  //If the matrix consists of only 1 column
   else if(C==1){
     for(int i=0;i<R;i++){
       cout<<arr[i][0]<<" ";
