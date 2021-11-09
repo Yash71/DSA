@@ -50,14 +50,24 @@ class LinkedList{
     head=previous;
   }
   node* reverse_ll_recursiveUtil(node* previous, node* current){
+    // if(current!=NULL){
+      // node* head=reverse_ll_recursiveUtil(current, current->next);
+      // current->next=previous;
+      // return head;
+    // }
+    // else{
+    //   return previous;
+    // }
     if(current!=NULL){
-      node* head=reverse_ll_recursiveUtil(current, current->next);
+      node* next=current->next;
       current->next=previous;
+      node *head=reverse_ll_recursiveUtil(current,next);
       return head;
     }
     else{
       return previous;
     }
+
   }
   void reverseRecursive(){
     head=reverse_ll_recursiveUtil(NULL,head);
