@@ -10,6 +10,14 @@ using namespace std;
       previous=NULL;
     }
   };
+  void print(node* head){
+    node* current=head;
+    while(current!=NULL){
+      cout<<current->data<<" ";
+      current=current->next;
+    }
+    cout<<"NULL"<<"\n";
+  }
 int main(){
   node* head= new node(10);
   node* temp1=new node(20);
@@ -18,5 +26,7 @@ int main(){
   temp1->previous=head;
   temp1->next=temp2;
   temp2->previous=temp1;
+
+  print(head);
   return 0;
 }
