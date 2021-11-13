@@ -18,7 +18,7 @@ void print(node* head){
 }
 //implementation 2
 void print_2(node* head){
-  if(head==NULL) cout<<"NULL"; return;
+  if(head==NULL)return;
   node* current=head;
   do{
     cout<<current->data<<" ";
