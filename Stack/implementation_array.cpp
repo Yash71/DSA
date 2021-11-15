@@ -1,3 +1,4 @@
+// Implementation of stack using arrays
 #include<iostream>
 using namespace std;
 struct stack{
