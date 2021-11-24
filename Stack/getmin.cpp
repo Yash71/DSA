@@ -20,7 +20,7 @@ struct stk{
     if(as.top()==ms.top()){
       as.pop();
     }
-    ms.top();
+    ms.pop();
   }
   int getmin(){
     return as.top();
