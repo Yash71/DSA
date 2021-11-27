@@ -44,7 +44,7 @@ class LinkedList{
       tail->next=newnode;
       tail=tail->next;
     }
-  }
+  } 
   // printing the linked list
   void list_print(){
     if(head==NULL){
