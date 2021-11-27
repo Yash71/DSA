@@ -11,7 +11,7 @@ class LinkedList{
       data=d;
       next=NULL;
     }
-  };
+  }; 
   node *head,*tail;
   public:
   LinkedList(){
