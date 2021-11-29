@@ -50,5 +50,9 @@ int main(){
   s.pop();
   cout<<s.top()<<"\n";
   s.pop();
+  cout<<s.top()<<"\n";
+  s.pop();
+  cout<<s.top()<<"\n";
+  s.pop();
   return 0;
 }
