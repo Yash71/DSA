@@ -1,4 +1,4 @@
-//recursive approach 
+//recursive approach  
 #include<iostream>
 using namespace std;
 struct node{
