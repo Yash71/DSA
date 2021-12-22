@@ -50,4 +50,4 @@ int main(){
   ll.insertion_at_begin(20);
   ll.insertion_at_begin(30);
   ll.print_list();
-}
+} 
