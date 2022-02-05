@@ -1,5 +1,5 @@
 //Find the square root of a number
-  #include<bits/stdc++.h>
+  #include<iostream>
   using namespace std;
 
   int sqroot(int x){
