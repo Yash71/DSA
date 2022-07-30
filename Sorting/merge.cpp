@@ -42,7 +42,7 @@ int merge_single(int arr[], int brr[], int m, int n) {
 int merge(int arr[], int low, int mid, int high) {
   
   //Here we create two auxillary sorted arrays and then we merge them to final array
-  int m = mid - low) - 1; //size of aux_arr1
+  int m = mid - low - 1; //size of aux_arr1
   int left[m]; //Auxillary array 1
   int n = high - mid; //size of aux_arr2
   int right[n]; //Auxillary array 2
