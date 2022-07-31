@@ -13,7 +13,7 @@
         swap(&arr[i],&arr[j]);
       }
     }
-    swap(&arr[i+1],&p);
+    swap(&arr[i+1],&arr[h]);
     return i+1;
   }
   void qsort(int arr[],int l,int h){
