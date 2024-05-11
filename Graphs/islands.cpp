@@ -38,7 +38,7 @@ int numIslands(vector<vector<char>> &grid){
 	int islands=0;
 	for(int row=0;row<n;row++){
 		for(int col=0;col<m;col++){
-			if(!vis[row][col] && grid[row][col]='1'){
+			if(!vis[row][col] && grid[row][col]=='1'){
 			bfs(grid,vis,row,col);
 			islands++;	
 		}
