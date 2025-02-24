@@ -20,4 +20,18 @@ int cost(int ind, vector<int>&height,vector<int>&dp){
         }
         return dp[height.size()-1];
         // return cost(height.size()-1,height,dp);
+
+        // space optimisation
+        int prev = 0, secPrev = 0, curr = 0;
+        for(int i = 1;i<height.size();i++){
+            int fs = prev + abs(height[i-1]-height[i]);
+            int ss = INT_MAX;
+            if(i>1){
+                ss = secPrev + abs(height[i-2]-height[i]);
+            }
+            curr = min(fs,ss);
+            secPrev = prev;
+            prev = curr;
+        }
+        return curr;
     }
